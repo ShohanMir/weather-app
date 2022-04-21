@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row" id="row">
+        <div class="col-6 d-flex">
+          <div class="align-self-center m-auto text-center">
+            <img id="branding" src="open.png" alt="Open Weather" />
+            <h3 class="nt-3 c1">Open Weather API</h3>
+            <p class="lead c1">Enter Your City, Check your weather</p>
+          </div>
+        </div>
+        <div class="col-6 d-flex" id="right">
+          <div class="align-self-center m-auto text-center">
+            <img
+              id="condition"
+              src="https://openweathermap.org/img/w/03d.png"
+              alt="Scattered Cloud"
+            />
+            <p class="lead">
+              <strong
+                ><span id="city">Chittagong</span>,<span id="country"
+                  >BD</span
+                ></strong
+              >
+              <br />
+              <strong><span id="main">Cloud</span></strong
+              >( <span id="description"> Scatterred Cloud</span> ) <br />
+              TEMP: <strong> <span id="temp"> 32 </span></strong> PRESSURE:
+              <strong> <span id="pressure">1032</span></strong> HUMIDITY:
+              <strong> <span id="humidity">75</span></strong>
+            </p>
+
+            <input
+              type="text"
+              id="city-input"
+              placeholder="Enter Your City Name"
+              class="form-control"
+            />
+            <small class="form-text text-muted">
+              After Entering your City Name Please Press Enter to Get Result
+            </small>
+            <h5 class="my-4">Recently Searched Result:</h5>
+            <div class="my-5" id="history"></div>
+            <div id="master-histroy" class="card card-body my-2">
+              <div class="d-flex">
+                <div>
+                  <img
+                    src="http://openweathermap.org/img/w/03d.png"
+                    alt="Scattered Cloud"
+                    class="condition"
+                  />
+                </div>
+                <div class="text-left">
+                  <p>
+                    <strong
+                      ><span class="city">Chittagong</span>,
+                      <span class="country">BD</span></strong
+                    >
+                    <br />
+                    <strong><span class="main">Cloud</span></strong>
+                    ( <span class="description">Scattered Cloud</span> ) <br />
+                    TEMP:
+                    <strong> <span class="temp">32</span></strong> PRESSURE:
+                    <strong><span class="pressure">1032</span></strong>
+                    HUMIDITY: <strong><span class="humidity">75</span></strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+      integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+      integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

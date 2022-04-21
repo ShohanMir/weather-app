@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #006eff; */
+  background-image: linear-gradient(to right, #141e30, #4ca1af);
+}
+
+.c1 {
+  color: #fff;
+}
+
+#left {
+  width: 50%;
+  height: 100vh;
+}
+
+#right {
+  width: 50%;
+  min-height: 100vh;
+  /* background: palegreen; */
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+}
+
+#branding {
+  padding: 1rem;
+  width: 50%;
+  height: auto;
+}
+
+#condition {
+  width: 100px;
+  height: auto;
+}
+
+#aster-history {
+  display: none;
+}
